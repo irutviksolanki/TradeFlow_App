@@ -152,7 +152,7 @@ lib/
 Clone the repository
 
 ```bash
-git clone https://github.com/<your-github-username>/tradeflow.git
+git clone https://github.com/irutviksolanki/tradeflow.git
 ```
 
 Move into the project
