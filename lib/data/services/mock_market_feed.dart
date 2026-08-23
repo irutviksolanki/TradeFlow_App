@@ -56,10 +56,10 @@ class MockMarketFeed {
   bool isMarketOpen() {
     final now = DateTime.now();
 
-    // final isWeekend =
-    //     now.weekday == DateTime.saturday || now.weekday == DateTime.sunday;
-    //
-    // if (isWeekend) return false;
+    final isWeekend =
+        now.weekday == DateTime.saturday || now.weekday == DateTime.sunday;
+
+    if (isWeekend) return false;
 
     final marketOpen = DateTime(now.year, now.month, now.day, 9, 15);
     final marketClose = DateTime(now.year, now.month, now.day, 15, 30);
