@@ -1,9 +1,25 @@
 # 📈 TradeFlow
-TradeFlow is a Flutter-based stock trading simulator developed for the **021 Trading App Flutter Assignment**.
-The application simulates a real-time stock trading experience with a live mock market feed, customizable watchlists, portfolio management, and buy/sell order execution.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter">
+  <img src="https://img.shields.io/badge/Dart-3.x-blue?logo=dart">
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-success">
+  <img src="https://img.shields.io/badge/State%20Management-Riverpod-orange">
+  <img src="https://img.shields.io/badge/Database-Hive-yellow">
+</p>
+
+TradeFlow is a **Flutter-based stock trading simulator** developed for the **021 Trading App Flutter Assignment**.
+
+The application simulates a real-time stock trading experience using a **mock market feed**, allowing users to create watchlists, monitor live stock prices, execute simulated buy/sell orders, and track portfolio performance.
+
+> **Note:** This application is built for learning and evaluation purposes. It does not connect to any real stock exchange or execute real financial transactions.
+
 ---
-## ✨ Features
-### 🔐 Authentication
+
+# ✨ Features
+
+## 🔐 Authentication
+
 - Splash Screen
 - Login using Password
 - Login using OTP (Demo)
@@ -11,72 +27,99 @@ The application simulates a real-time stock trading experience with a live mock 
 - Continue with Facebook (Mock)
 - Persistent Login using Hive
 - Logout
+
 ---
-### 📊 Live Market
+
+## 📊 Live Market
+
 - Live simulated market feed
 - 10 predefined NSE stocks
 - Real-time LTP updates
+- Live price movement animation
 - Price Change & Change %
-- Green/Red flash animation on price updates
-- Interactive stock chart
-- Stock Detail screen
+- Interactive stock charts
+- Stock Details screen
 - Market Open / Market Closed logic
-#### Market Hours
+
+### Market Hours
+
 - Monday – Friday
 - 09:15 AM – 03:30 PM IST
+
 ---
-### ⭐ Watchlists
+
+## ⭐ Watchlists
+
 - Create multiple watchlists
 - Rename watchlists
 - Delete watchlists
 - Add stocks
 - Remove stocks
-- Drag & drop stock reordering
-- Live price synchronization
-- Persistent watchlists
+- Drag & Drop stock ordering
+- Live synchronized prices
+- Persistent storage using Hive
+
 ---
-### 📈 Stock Details
-- Interactive price chart
+
+## 📈 Stock Details
+
+- Interactive stock chart
 - Live LTP
 - Previous Close
-- Open / High / Low
+- Open
+- High
+- Low
 - Market statistics
-- Buy/Sell shortcuts
+- Quick Buy / Sell actions
+
 ---
-### 💰 Buy / Sell Orders
-- Live price updates
-- Buy orders
-- Sell orders
+
+## 💰 Buy & Sell Orders
+
+- Buy stocks
+- Sell stocks
+- Live order value calculation
 - Wallet balance validation
 - Quantity validation
 - Holdings validation
-- Live order value calculation
 - Order confirmation screen
+
 ---
-### 💼 Portfolio / Holdings
-- Live holdings
-- Live portfolio P&L
-- Total invested amount
-- Current portfolio value
-- Profit & Loss in ₹ and %
-- Average cost
-- Quantity held
-#### Portfolio Sorting
+
+## 💼 Portfolio
+
+- Live Holdings
+- Live Portfolio Value
+- Live Profit & Loss
+- Invested Amount
+- Current Value
+- Average Cost
+- Quantity Held
+
+### Sorting
+
 - P&L
 - Symbol
 - Current Value
+
 ---
-### 🎨 User Interface
+
+## 🎨 User Interface
+
 - Material 3 Design
 - Light Theme
 - Dark Theme
-- Theme persistence
-- Side Navigation Drawer
-- Responsive UI
-- Smooth animations
+- Theme Persistence
+- Navigation Drawer
+- Responsive Layout
+- Smooth Animations
+
 ---
-## 📦 Stocks Included
-The application includes the following 10 predefined NSE stocks:
+
+# 📦 Available Stocks
+
+The application currently includes the following NSE stocks:
+
 - RELIANCE
 - TCS
 - INFY
@@ -87,16 +130,24 @@ The application includes the following 10 predefined NSE stocks:
 - LT
 - BHARTIARTL
 - AXISBANK
+
 ---
-## 🛠 Tech Stack
-- **Flutter** – Cross-platform application development
-- **Dart** – Programming language
-- **Riverpod** – State management
-- **Hive** – Local data persistence
-- **FL Chart** – Interactive charts
-- **Material 3** – UI and theming
+
+# 🛠 Tech Stack
+
+| Technology | Usage |
+|------------|------|
+| Flutter | Cross-platform Development |
+| Dart | Programming Language |
+| Riverpod | State Management |
+| Hive | Local Database |
+| FL Chart | Interactive Charts |
+| Material 3 | UI Design |
+
 ---
-## 📂 Project Structure
+
+# 📂 Project Structure
+
 ```text
 lib/
 │
@@ -120,167 +171,191 @@ lib/
 ├── providers/
 │
 └── main.dart
+```
 
-⸻
+---
 
-🚀 Getting Started
+# 🚀 Getting Started
 
-Prerequisites
+## Prerequisites
 
-Make sure you have the following installed:
+- Flutter SDK
+- Dart SDK
+- Android Studio / VS Code
+- Android Emulator / Physical Device
+- Xcode (for iOS)
 
-* Flutter SDK
-* Dart SDK
-* Android Studio / Xcode
-* Android or iOS device/emulator
+Verify Flutter installation:
 
-You can verify your Flutter installation using:
-
+```bash
 flutter doctor
+```
 
-⸻
+---
 
-Clone the Repository
+## Clone Repository
 
+```bash
 git clone https://github.com/irutviksolanki/TradeFlow_App.git
+```
 
-Move into the Project
+Move into the project:
 
+```bash
 cd TradeFlow_App
+```
 
-Install Dependencies
+Install dependencies:
 
+```bash
 flutter pub get
+```
 
-Run the Application
+Run the project:
 
+```bash
 flutter run
+```
 
-⸻
+---
 
-💾 Persistent Data
+# 💾 Local Persistence
 
-The application uses Hive for local data persistence.
+TradeFlow uses **Hive** to store application data locally.
 
-The following data is stored locally:
+Persisted data includes:
 
-* User Login
-* Theme Preference
-* Watchlists
-* Holdings
-* Wallet Balance
-* Order History
+- User Login
+- Theme Preference
+- Watchlists
+- Holdings
+- Wallet Balance
+- Order History
 
-This allows important application data to remain available even after restarting the application.
+All important application data remains available after restarting the application.
 
-⸻
+---
 
-📱 Supported Platforms
+# 📱 Supported Platforms
 
-* ✅ Android
-* ✅ iOS
+- ✅ Android
+- ✅ iOS
 
-⸻
+---
 
-📸 Application Screens
+# 📸 Application Screens
 
-The application includes the following screens and flows:
+- Splash Screen
+- Login Screen
+- OTP Login
+- Market Dashboard
+- Stock Details
+- Watchlists
+- Buy/Sell Screen
+- Holdings
+- Portfolio
+- Order Confirmation
+- Navigation Drawer
+- Profile Dialog
 
-* Splash Screen
-* Login Screen
-* Market Dashboard
-* Watchlists
-* Stock Detail
-* Buy/Sell Ticket
-* Holdings
-* Order Confirmation
-* Navigation Drawer
-* Profile Dialog
+---
 
-⸻
+# 📋 Assignment Coverage
 
-📋 Assignment Coverage
+| Feature | Status |
+|----------|--------|
+| Authentication | ✅ |
+| Live Market Feed | ✅ |
+| Multiple Watchlists | ✅ |
+| Buy / Sell Orders | ✅ |
+| Portfolio | ✅ |
+| Holdings | ✅ |
+| Live P&L | ✅ |
+| Interactive Charts | ✅ |
+| Market Open / Close Logic | ✅ |
+| Theme Switching | ✅ |
+| Local Persistence | ✅ |
+| Responsive UI | ✅ |
 
-Feature	Status
-Live Market Feed	✅
-Multiple Watchlists	✅
-Buy / Sell Ticket	✅
-Portfolio / Holdings	✅
-Live P&L	✅
-Market Open / Close Logic	✅
-Interactive Stock Chart	✅
-Theme Switching	✅
-Authentication Flow	✅
-Local Persistence	✅
-Responsive UI	✅
+---
 
-⸻
+# 🎥 App Walkthrough
 
-📹 App Walkthrough
+A complete walkthrough video demonstrating the application's features is available on Google Drive.
 
-A complete walkthrough video is provided to demonstrate how the application works and to showcase the implemented features.
+## ▶️ Watch the Demo
 
-🎥 Watch the App Walkthrough
+**Google Drive Video**
 
-▶️ View TradeFlow App Walkthrough⁠￼
+https://drive.google.com/file/d/1x7ssjr9amW_9eBg9ldi1T54R02TkY_r-/view?usp=drivesdk
 
-The walkthrough demonstrates:
+The walkthrough covers:
 
-* Authentication flow
-* Market dashboard
-* Live simulated stock prices
-* Watchlist management
-* Stock details and charts
-* Buy/Sell order flow
-* Wallet validation
-* Holdings and portfolio P&L
-* Theme switching
-* Navigation
-* Local persistence
+- Authentication Flow
+- Live Market Dashboard
+- Real-time Price Simulation
+- Stock Details
+- Interactive Charts
+- Watchlist Management
+- Buy/Sell Order Execution
+- Wallet Validation
+- Holdings & Portfolio
+- Live P&L Updates
+- Theme Switching
+- Navigation
+- Local Data Persistence
 
-⸻
+---
 
-🔄 Application Flow
+# 🔄 Application Flow
 
+```text
 Splash Screen
-      ↓
+      │
+      ▼
 Authentication
-      ↓
+      │
+      ▼
 Market Dashboard
-      ↓
- ┌───────────────┬────────────────┐
- ↓               ↓                ↓
-Watchlist     Stock Details    Holdings
- ↓               ↓                ↓
-Add/Remove     Buy / Sell       Portfolio
-Stocks         Order Ticket     P&L
- ↓               ↓
-Live Prices    Confirmation
-      ↓
+      │
+ ┌────┼──────────────┐
+ ▼    ▼              ▼
+Watchlist      Stock Details      Holdings
+ │                 │                 │
+ ▼                 ▼                 ▼
+Manage         Buy / Sell       Portfolio
+Stocks         Orders           Performance
+ │                 │
+ ▼                 ▼
+Live Prices   Confirmation
+      │
+      ▼
 Local Persistence
+```
 
-⸻
+---
 
-🧪 Mock Trading Environment
+# 🧪 Mock Trading Environment
 
-TradeFlow is a stock trading simulator created for assignment and demonstration purposes.
+TradeFlow is a simulated trading platform created for assignment and demonstration purposes.
 
-It does not connect to a real stock exchange or execute real financial transactions.
+- No real stock exchange integration
+- No real money involved
+- No live trading
+- Prices are generated using a mock market engine
 
-The market prices are generated using a mock market feed to simulate live price movements and trading scenarios.
+---
 
-⸻
+# 👨‍💻 Author
 
-👨‍💻 Author
-
-Rutvik Solanki
+**Rutvik Solanki**
 
 Flutter Developer
 
-GitHub: github.com/irutviksolanki⁠￼
+🔗 GitHub: https://github.com/irutviksolanki
 
-⸻
+---
 
-📄 License
+# 📄 License
 
-This project was developed as part of the 021 Trading App Flutter Assignment for evaluation purposes.
+This project was developed as part of the **021 Trading App Flutter Assignment** for evaluation purposes.
